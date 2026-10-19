@@ -1,517 +1,437 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Meta (Diperbarui dinamis oleh script.js dari config.js) -->
-  <title>Properti di Magelang</title>
-  <meta name="description" content="">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="">
-  
-  <!-- Open Graph -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173f35">
+  <title>Tanah Kavling & Rumah di Magelang | Konsultasi Gratis</title>
+  <meta name="description" content="Cari tanah kavling atau rumah di Magelang? Lihat informasi lokasi, spesifikasi, dan jadwalkan survei melalui WhatsApp.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
+  <meta property="og:title" content="Temukan Kavling atau Rumah di Magelang">
+  <meta property="og:description" content="Minta informasi harga, ketersediaan, dan jadwalkan survei lokasi melalui WhatsApp.">
   <meta property="og:image" content="">
-  <meta property="og:url" content="">
-  <meta property="og:locale" content="id_ID">
-  
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image" content="">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  
-  <!-- Preconnect Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23173f35'/%3E%3Cpath d='M18 48 50 22 82 48v32H58V58H42v22H18z' fill='%23fff'/%3E%3C/svg%3E">
+  <style>
+    :root{--green:#173f35;--green2:#235b49;--lime:#d9edc2;--cream:#f7f5ef;--ink:#18231f;--muted:#66736d;--line:#e4e8e2;--white:#fff;--gold:#d8b66a;--shadow:0 18px 50px rgba(24,45,35,.10)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button,input,select,textarea{font:inherit}
+    .container{width:min(1140px,calc(100% - 40px));margin-inline:auto}
+    .announcement{background:var(--green);color:#fff;text-align:center;font-size:.82rem;padding:9px 14px}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(228,232,226,.8)}
+    .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:-.03em;color:var(--green)}
+    .brand-mark{width:39px;height:39px;border-radius:13px;background:var(--green);color:#fff;display:grid;place-items:center;font-size:1.15rem}
+    .navlinks{display:flex;align-items:center;gap:25px;color:#47564e;font-size:.91rem}
+    .navlinks a:hover{color:var(--green2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:999px;padding:13px 20px;font-weight:750;cursor:pointer;transition:transform .2s,background .2s;line-height:1.2}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--green);color:#fff;box-shadow:0 8px 22px rgba(23,63,53,.18)}
+    .btn-primary:hover{background:var(--green2)}
+    .btn-light{background:#fff;color:var(--green);border:1px solid var(--line)}
+    .btn-outline{border:1px solid rgba(255,255,255,.55);color:#fff;background:transparent}
+    .hero{background:var(--cream);padding:58px 0 64px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:50px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--green2);background:#e8f0e6;border-radius:999px;padding:7px 12px;font-size:.78rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(2.5rem,5vw,4.5rem);line-height:1.04;letter-spacing:-.055em;margin:20px 0}
+    h1 span{color:var(--green2)}
+    .hero-copy{font-size:1.08rem;color:#59665f;max-width:550px;margin-bottom:25px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .trustline{display:flex;flex-wrap:wrap;gap:18px;margin-top:26px;color:#536159;font-size:.86rem}
+    .trustline span{display:flex;align-items:center;gap:7px}
+    .check{display:inline-grid;place-items:center;background:#dcebd7;color:var(--green);width:21px;height:21px;border-radius:50%;font-size:.8rem;font-weight:900}
+    .hero-visual{position:relative;min-height:440px}
+    .hero-photo{height:440px;width:100%;object-fit:cover;border-radius:28px;background:#d9dfd4;box-shadow:var(--shadow)}
+    .image-placeholder{height:100%;min-height:440px;border-radius:28px;background:linear-gradient(145deg,#c9d8c6,#edf0e7 50%,#b6c9b6);display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;color:#355144}
+    .image-placeholder .house{font-size:5rem;display:block}
+    .image-note{position:absolute;left:-20px;bottom:22px;background:#fff;border-radius:18px;padding:16px 19px;box-shadow:var(--shadow);max-width:230px}
+    .image-note strong{display:block;color:var(--green);font-size:1rem}
+    .image-note small{color:var(--muted)}
+    .section{padding:82px 0}
+    .section-soft{background:#f8faf7}
+    .section-head{max-width:700px;margin:0 auto 38px;text-align:center}
+    .kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--green2);font-weight:850;margin-bottom:10px}
+    h2{font-size:clamp(1.9rem,3.5vw,3rem);letter-spacing:-.04em;line-height:1.12;margin-bottom:15px}
+    .section-head p,.muted{color:var(--muted)}
+    .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-1px}
+    .fact{padding:22px;border:1px solid var(--line);border-radius:18px;background:#fff}
+    .fact-icon{width:42px;height:42px;display:grid;place-items:center;background:#eaf1e6;color:var(--green);border-radius:13px;font-size:1.25rem;margin-bottom:13px}
+    .fact strong{display:block;font-size:1rem;margin-bottom:3px}
+    .fact small{color:var(--muted)}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+    .feature-list{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px}
+    .feature{padding:19px;border:1px solid var(--line);border-radius:17px}
+    .feature b{display:block;margin:8px 0 4px}
+    .feature p{color:var(--muted);font-size:.9rem;margin-bottom:0}
+    .visual-card{background:#e6eee2;border-radius:26px;min-height:370px;padding:28px;display:flex;align-items:end;position:relative;overflow:hidden}
+    .visual-card:before,.visual-card:after{content:"";position:absolute;border-radius:50%;background:#cadcc4}
+    .visual-card:before{width:300px;height:300px;right:-65px;top:-85px}
+    .visual-card:after{width:210px;height:210px;left:-65px;bottom:-80px;background:#b5cfad}
+    .visual-card-content{position:relative;z-index:1;background:rgba(255,255,255,.92);padding:22px;border-radius:18px;width:100%}
+    .visual-card-content strong{font-size:1.15rem}
+    .visual-card-content p{margin:6px 0 0;color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:14px}
+    .gallery-item{min-height:200px;border-radius:18px;overflow:hidden;background:linear-gradient(135deg,#e1e8dd,#b7cbb4);display:grid;place-items:center;text-align:center;padding:18px;color:#385547}
+    .gallery-item:first-child{grid-row:span 2;min-height:414px}
+    .gallery-item .placeholder-icon{font-size:2.6rem;display:block;margin-bottom:8px}
+    .gallery-item small{display:block;max-width:230px}
+    .map-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:32px;align-items:stretch}
+    .map-info{padding:28px;background:var(--green);color:#fff;border-radius:24px}
+    .map-info p{color:rgba(255,255,255,.76)}
+    .map-frame{min-height:360px;border:0;border-radius:24px;width:100%;height:100%;background:#e8ece7}
+    .address-label{font-size:.78rem;color:#c8dfc9;text-transform:uppercase;letter-spacing:.1em;font-weight:800}
+    .faq-list{max-width:800px;margin:auto}
+    details{border-bottom:1px solid var(--line);padding:19px 0}
+    summary{cursor:pointer;list-style:none;font-weight:750;display:flex;justify-content:space-between;gap:18px}
+    summary::-webkit-details-marker{display:none}
+    summary:after{content:"+";font-size:1.4rem;color:var(--green)}
+    details[open] summary:after{content:"−"}
+    details p{color:var(--muted);margin:13px 0 0;max-width:720px}
+    .lead-section{background:var(--cream)}
+    .lead-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:start}
+    .lead-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field{display:flex;flex-direction:column;gap:7px}
+    .field.full{grid-column:1/-1}
+    label{font-size:.88rem;font-weight:750}
+    input,select,textarea{width:100%;border:1px solid #d9e0d8;border-radius:12px;padding:12px 13px;background:#fff;color:var(--ink);min-height:47px}
+    input:focus,select:focus,textarea:focus{outline:3px solid rgba(35,91,73,.15);border-color:var(--green2)}
+    .privacy-note{font-size:.78rem;color:var(--muted);margin:14px 0}
+    .form-status{margin-top:12px;color:#a02d2d;font-size:.9rem}
+    .cta-band{padding:52px 0;background:var(--green);color:#fff}
+    .cta-row{display:flex;justify-content:space-between;align-items:center;gap:25px}
+    .cta-row h2{margin:0 0 8px;font-size:clamp(1.7rem,3vw,2.5rem)}
+    .cta-row p{margin:0;color:rgba(255,255,255,.75)}
+    footer{padding:34px 0 100px;color:#647169;font-size:.86rem}
+    .footer-row{display:flex;justify-content:space-between;gap:25px;align-items:flex-start}
+    .footer-row strong{color:var(--green)}
+    .footer-small{font-size:.78rem;max-width:620px;margin-top:12px}
+    .mobile-cta{display:none}
+    .hidden{display:none!important}
+    @media(max-width:900px){.navlinks{gap:14px}.navlinks a:not(.btn){display:none}.hero-grid,.two-col,.lead-grid,.map-grid{grid-template-columns:1fr}.hero-grid{gap:30px}.hero-visual{min-height:350px}.hero-photo,.image-placeholder{height:350px;min-height:350px}.image-note{left:12px}.facts{grid-template-columns:repeat(2,1fr)}.map-frame{min-height:320px}.visual-card{min-height:300px}}
+    @media(max-width:600px){.container{width:min(100% - 30px,1140px)}.announcement{font-size:.74rem}.nav{height:64px}.brand{font-size:.92rem}.brand-mark{width:34px;height:34px}.nav>.btn{padding:10px 13px;font-size:.82rem}.hero{padding:42px 0 48px}.hero-grid{gap:25px}h1{font-size:2.7rem}.hero-copy{font-size:1rem}.hero-actions .btn{width:100%}.trustline{gap:10px;font-size:.8rem}.hero-visual{min-height:290px}.hero-photo,.image-placeholder{height:290px;min-height:290px;border-radius:21px}.image-note{bottom:12px;padding:12px 14px;max-width:200px}.section{padding:60px 0}.section-head{text-align:left;margin-bottom:28px}.facts{gap:10px}.fact{padding:16px}.fact-icon{width:36px;height:36px}.feature-list{grid-template-columns:1fr;gap:10px}.gallery{grid-template-columns:1fr 1fr;gap:10px}.gallery-item,.gallery-item:first-child{min-height:150px;grid-row:auto}.gallery-item:first-child{grid-column:1/-1;min-height:210px}.map-info{padding:22px}.map-frame{min-height:280px}.lead-card{padding:20px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.cta-row,.footer-row{flex-direction:column;align-items:flex-start}.cta-row .btn{width:100%}.mobile-cta{position:fixed;bottom:0;left:0;right:0;z-index:30;display:flex;padding:10px 15px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);backdrop-filter:blur(12px)}.mobile-cta .btn{width:100%}footer{padding-bottom:105px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+  </style>
 </head>
 <body>
-  <!-- 1. Announcement Bar -->
-  <div id="announcement-bar" class="announcement-bar" role="banner" hidden>
-    <div class="container">
-      <p id="announcement-text"></p>
-      <button class="announcement-close" aria-label="Tutup pengumuman" onclick="this.closest('.announcement-bar').hidden=true">&times;</button>
-    </div>
-  </div>
-
-  <!-- 2. Header -->
-  <header class="header" id="header">
-    <div class="container header-inner">
-      <a href="#" class="header-logo" id="header-logo">
-        <span class="logo-text" id="logo-developer-name">Developer</span>
+  <div class="announcement">Informasi harga, ketersediaan unit, dan jadwal survei melalui WhatsApp</div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#" aria-label="Beranda">
+        <span class="brand-mark" aria-hidden="true">⌂</span>
+        <span data-project-name>Properti Magelang</span>
       </a>
-      <nav class="header-nav" id="header-nav" aria-label="Navigasi utama">
-        <ul class="nav-list">
-          <li><a href="#tentang" class="nav-link">Tentang</a></li>
-          <li><a href="#keunggulan" class="nav-link">Keunggulan</a></li>
-          <li><a href="#lokasi" class="nav-link">Lokasi</a></li>
-          <li><a href="#galeri" class="nav-link">Galeri</a></li>
-          <li><a href="#faq" class="nav-link">FAQ</a></li>
-        </ul>
+      <nav class="navlinks" aria-label="Navigasi utama">
+        <a href="#tentang">Tentang</a><a href="#keunggulan">Keunggulan</a><a href="#lokasi">Lokasi</a><a href="#faq">FAQ</a>
       </nav>
-      <a href="#" class="btn btn-primary btn-sm header-cta" id="header-wa-btn" target="_blank" rel="noopener noreferrer">
-        <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-        Tanya via WhatsApp
-      </a>
-      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </button>
-    </div>
-
-    <!-- Mobile Navigation Drawer -->
-    <div class="mobile-menu" id="mobile-menu" hidden>
-      <nav aria-label="Navigasi mobile">
-        <ul class="mobile-nav-list">
-          <li><a href="#tentang" class="mobile-nav-link">Tentang Proyek</a></li>
-          <li><a href="#keunggulan" class="mobile-nav-link">Keunggulan</a></li>
-          <li><a href="#unit" class="mobile-nav-link">Unit Tersedia</a></li>
-          <li><a href="#lokasi" class="mobile-nav-link">Lokasi</a></li>
-          <li><a href="#galeri" class="mobile-nav-link">Galeri</a></li>
-          <li><a href="#faq" class="mobile-nav-link">FAQ</a></li>
-          <li><a href="#kontak" class="mobile-nav-link">Kontak</a></li>
-        </ul>
-        <a href="#" class="btn btn-primary btn-block mobile-wa-btn" id="mobile-wa-btn" target="_blank" rel="noopener noreferrer">
-          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-          Tanya via WhatsApp
-        </a>
-      </nav>
+      <a class="btn btn-primary js-wa" href="#kontak" data-wa-message="Halo, saya ingin bertanya tentang properti ini.">Tanya WhatsApp ↗</a>
     </div>
   </header>
 
   <main>
-    <!-- 3. Hero Section -->
-    <section class="hero" id="hero">
-      <div class="container">
-        <!-- Breadcrumb -->
-        <nav class="breadcrumb" id="breadcrumb" aria-label="Breadcrumb" hidden>
-          <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-              <a itemprop="item" href="#"><span itemprop="name">Beranda</span></a>
-              <meta itemprop="position" content="1">
-            </li>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-              <span itemprop="name" id="breadcrumb-city">Magelang</span>
-              <meta itemprop="position" content="2">
-            </li>
-            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-              <span itemprop="name" id="breadcrumb-project" aria-current="page">Proyek</span>
-              <meta itemprop="position" content="3">
-            </li>
-          </ol>
-        </nav>
-
-        <div class="hero-content">
-          <div class="hero-text">
-            <span class="badge" id="hero-badge">Tanah Kavling</span>
-            <h1 id="hero-title">Properti di Magelang</h1>
-            <p class="hero-subtitle" id="hero-subtitle">Hubungi kami untuk informasi lebih lanjut.</p>
-            
-            <!-- Price & Area Quick Info -->
-            <div class="hero-meta" id="hero-meta" hidden>
-              <div class="hero-meta-item" id="hero-price-info" hidden>
-                <span class="hero-meta-label">Mulai dari</span>
-                <span class="hero-meta-value" id="hero-price"></span>
-              </div>
-              <div class="hero-meta-item" id="hero-area-info" hidden>
-                <span class="hero-meta-label">Luas</span>
-                <span class="hero-meta-value" id="hero-area"></span>
-              </div>
-            </div>
-
-            <div class="hero-actions">
-              <a href="#" class="btn btn-primary btn-lg" id="hero-cta-primary" target="_blank" rel="noopener noreferrer">
-                <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                Tanya Harga & Ketersediaan
-              </a>
-              <a href="#lokasi" class="btn btn-outline btn-lg" id="hero-cta-secondary">
-                <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                Lihat Lokasi
-              </a>
-            </div>
-            <p class="hero-microcopy">Hubungi sales kami untuk informasi detail, harga terbaru, dan jadwal survei lokasi.</p>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow"><span aria-hidden="true">⌖</span> <span data-project-type-label>Tanah Kavling & Rumah</span> · <span data-city>Magelang</span></span>
+          <h1><span data-hero-title>Temukan Kavling atau Rumah</span> yang Cocok untuk Rencanamu</h1>
+          <p class="hero-copy" data-hero-subtitle>Dapatkan informasi lokasi, spesifikasi, harga, dan pilihan pembayaran langsung dari tim sales. Kenali propertinya, lalu jadwalkan survei sebelum mengambil keputusan.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary js-wa" href="#kontak" data-wa-message="Halo, saya ingin mengetahui harga dan ketersediaan properti ini.">Tanya Harga & Unit ↗</a>
+            <a class="btn btn-light" href="#lokasi">Lihat Lokasi ↓</a>
           </div>
-          <div class="hero-image-wrapper">
-            <img id="hero-image" src="assets/images/hero-placeholder.jpg" alt="Foto lokasi properti" width="800" height="500" class="hero-image" fetchpriority="high">
-            <span class="hero-image-label" id="hero-image-label">Gambar ilustrasi — bukan foto aktual proyek</span>
+          <div class="trustline">
+            <span><i class="check">✓</i> Informasi langsung dari sales</span>
+            <span><i class="check">✓</i> Bisa atur survei lokasi</span>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- 4. Quick Information Cards -->
-    <section class="quick-info" id="quick-info">
-      <div class="container">
-        <div class="quick-info-grid" id="quick-info-grid">
-          <!-- Kartu di-generate otomatis oleh script.js -->
+        <div class="hero-visual">
+          <div class="image-placeholder" data-hero-placeholder>
+            <div><span class="house" aria-hidden="true">⌂</span><strong>Tambahkan foto asli proyek</strong><br><small>Ganti melalui konfigurasi landing page</small></div>
+          </div>
+          <img class="hero-photo hidden" data-hero-image alt="Foto properti yang ditawarkan" fetchpriority="high">
+          <div class="image-note"><strong data-price-label>Harga & unit tersedia</strong><small>Hubungi sales untuk informasi terbaru</small></div>
         </div>
       </div>
     </section>
 
-    <!-- 5. Tentang Proyek -->
-    <section class="section" id="tentang">
+    <section class="section" aria-label="Ringkasan properti">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label">Tentang Proyek</span>
-          <h2 class="section-title" id="about-title">Tentang Proyek Ini</h2>
-        </div>
-        <div class="about-content" id="about-content">
-          <!-- Paragraf di-generate otomatis oleh script.js -->
-        </div>
-        <div class="about-cta">
-          <a href="#" class="btn btn-primary" id="about-wa-btn" target="_blank" rel="noopener noreferrer">Minta Informasi Lengkap</a>
+        <div class="facts">
+          <article class="fact"><div class="fact-icon" aria-hidden="true">⌖</div><strong data-location-short>Magelang, Jawa Tengah</strong><small>Lokasi proyek</small></article>
+          <article class="fact"><div class="fact-icon" aria-hidden="true">▱</div><strong data-land-area>Konfirmasi ke sales</strong><small>Luas tanah / kavling</small></article>
+          <article class="fact"><div class="fact-icon" aria-hidden="true">⌂</div><strong data-building-area>Konfirmasi ke sales</strong><small>Luas bangunan</small></article>
+          <article class="fact"><div class="fact-icon" aria-hidden="true">Rp</div><strong data-price>Hubungi sales</strong><small>Harga dan pembayaran</small></article>
         </div>
       </div>
     </section>
 
-    <!-- 6. Keunggulan Properti -->
-    <section class="section section-alt" id="keunggulan" hidden>
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Keunggulan</span>
-          <h2 class="section-title">Keunggulan Properti</h2>
-        </div>
-        <div class="features-grid" id="features-grid">
-          <!-- Kartu keunggulan di-generate oleh script.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. Galeri Foto & Video -->
-    <section class="section" id="galeri" hidden>
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Galeri</span>
-          <h2 class="section-title">Galeri Foto & Video</h2>
-        </div>
-        <div class="gallery-filters" id="gallery-filters" hidden>
-          <!-- Tombol filter di-generate oleh script.js -->
-        </div>
-        <div class="gallery-grid" id="gallery-grid">
-          <!-- Item foto/video di-generate oleh script.js -->
-        </div>
-
-        <!-- Lightbox Modal -->
-        <div class="lightbox" id="lightbox" hidden role="dialog" aria-label="Tampilan gambar besar" aria-modal="true">
-          <button class="lightbox-close" aria-label="Tutup">&times;</button>
-          <button class="lightbox-prev" aria-label="Gambar sebelumnya">&#8249;</button>
-          <button class="lightbox-next" aria-label="Gambar berikutnya">&#8250;</button>
-          <div class="lightbox-content">
-            <img id="lightbox-image" src="" alt="" loading="lazy">
-            <p class="lightbox-caption" id="lightbox-caption"></p>
+    <section class="section section-soft" id="tentang">
+      <div class="container two-col">
+        <div>
+          <div class="kicker">Kenali proyeknya</div>
+          <h2 data-about-title>Pilih properti berdasarkan kebutuhanmu</h2>
+          <p class="muted" data-about-copy>Setiap orang memiliki rencana yang berbeda. Cari tahu detail tanah kavling atau rumah, akses menuju lokasi, spesifikasi, serta dokumen yang dapat diperiksa sebelum memutuskan membeli.</p>
+          <div class="feature-list" id="feature-list">
+            <article class="feature"><span aria-hidden="true">✓</span><b>Informasi transparan</b><p>Tanyakan detail produk dan biaya yang perlu disiapkan.</p></article>
+            <article class="feature"><span aria-hidden="true">⌖</span><b>Lihat lokasi langsung</b><p>Jadwalkan kunjungan agar bisa menilai kondisi di lapangan.</p></article>
+            <article class="feature"><span aria-hidden="true">▤</span><b>Kenali spesifikasi</b><p>Pastikan luas dan spesifikasi sesuai kebutuhan.</p></article>
+            <article class="feature"><span aria-hidden="true">♡</span><b>Konsultasi dengan sales</b><p>Minta penjelasan proses pembelian dan pembayaran.</p></article>
           </div>
         </div>
+        <div class="visual-card">
+          <div class="visual-card-content"><strong>Survei dulu, pertimbangkan dengan tenang.</strong><p>Gunakan kunjungan lokasi untuk melihat akses, lingkungan, dan kondisi properti secara langsung.</p></div>
+        </div>
       </div>
     </section>
 
-    <!-- 8. Informasi Kavling atau Unit -->
-    <section class="section section-alt" id="unit" hidden>
+    <section class="section" id="galeri">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label" id="unit-section-label">Unit Tersedia</span>
-          <h2 class="section-title" id="unit-section-title">Pilihan Unit</h2>
-        </div>
-        <!-- Tanah Kavling -->
-        <div id="kavling-units-container" hidden>
-          <h3 class="subsection-title">Tanah Kavling</h3>
-          <div class="units-grid" id="kavling-units-grid"></div>
-        </div>
-        <!-- Rumah -->
-        <div id="house-units-container" hidden>
-          <h3 class="subsection-title">Rumah</h3>
-          <div class="units-grid" id="house-units-grid"></div>
-        </div>
-        <div class="units-cta">
-          <p>Informasi unit dan ketersediaan dapat berubah. Hubungi sales untuk data terbaru.</p>
-          <a href="#" class="btn btn-primary" id="unit-wa-btn" target="_blank" rel="noopener noreferrer">Tanya Unit Tersedia</a>
+        <div class="section-head"><div class="kicker">Galeri proyek</div><h2>Lihat kondisi properti secara langsung</h2><p>Foto proyek yang sebenarnya membantu calon pembeli memahami kondisi lokasi. Foto contoh di bawah perlu diganti dengan dokumentasi resmi sebelum halaman dipublikasikan.</p></div>
+        <div class="gallery">
+          <div class="gallery-item"><div><span class="placeholder-icon" aria-hidden="true">▧</span><strong>Foto utama lokasi</strong><small>Ganti dengan foto asli tanah atau rumah</small></div></div>
+          <div class="gallery-item"><div><span class="placeholder-icon" aria-hidden="true">⌖</span><strong>Akses jalan</strong><small>Tambahkan dokumentasi jalan masuk</small></div></div>
+          <div class="gallery-item"><div><span class="placeholder-icon" aria-hidden="true">⌂</span><strong>Unit / kavling</strong><small>Tambahkan foto unit yang tersedia</small></div></div>
+          <div class="gallery-item"><div><span class="placeholder-icon" aria-hidden="true">▤</span><strong>Denah / ukuran</strong><small>Gunakan denah yang telah dikonfirmasi</small></div></div>
+          <div class="gallery-item"><div><span class="placeholder-icon" aria-hidden="true">▶</span><strong>Video lokasi</strong><small>Tambahkan tautan video tur jika tersedia</small></div></div>
         </div>
       </div>
     </section>
 
-    <!-- 9. Peta Lokasi Google Maps -->
+    <section class="section section-soft" id="keunggulan">
+      <div class="container">
+        <div class="section-head"><div class="kicker">Informasi penting</div><h2>Kenali detail sebelum membeli</h2><p>Gunakan informasi yang terverifikasi untuk membandingkan properti dengan kebutuhan dan anggaranmu.</p></div>
+        <div class="facts">
+          <article class="fact"><div class="fact-icon" aria-hidden="true">▤</div><strong>Ukuran & spesifikasi</strong><small>Tanyakan luas dan detail unit yang tersedia.</small></article>
+          <article class="fact"><div class="fact-icon" aria-hidden="true">Rp</div><strong>Harga & biaya</strong><small>Minta rincian harga dan biaya tambahan.</small></article>
+          <article class="fact"><div class="fact-icon" aria-hidden="true">⌖</div><strong>Akses & lingkungan</strong><small>Periksa kondisi lokasi saat survei.</small></article>
+          <article class="fact"><div class="fact-icon" aria-hidden="true">▣</div><strong>Dokumen properti</strong><small>Tanyakan dokumen yang dapat diperiksa.</small></article>
+        </div>
+      </div>
+    </section>
+
     <section class="section" id="lokasi">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label">Lokasi</span>
-          <h2 class="section-title">Lokasi & Akses</h2>
-        </div>
-        <div class="location-content">
-          <div class="map-wrapper" id="map-wrapper">
-            <div class="map-placeholder" id="map-placeholder">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <p>Peta lokasi akan tersedia setelah informasi lokasi dikonfirmasi</p>
-            </div>
-            <!-- iframe dimasukkan via script.js jika URL terisi -->
+        <div class="section-head"><div class="kicker">Lokasi proyek</div><h2>Lihat lokasi dan rencanakan survei</h2><p data-address-text>Alamat lengkap akan dikonfirmasi oleh tim sales.</p></div>
+        <div class="map-grid">
+          <div class="map-info">
+            <div class="address-label">Alamat proyek</div>
+            <h3 data-project-name>Properti Magelang</h3>
+            <p data-address-detail>Alamat lengkap belum dimasukkan. Hubungi sales untuk mendapatkan titik lokasi yang tepat.</p>
+            <a class="btn btn-light" data-directions href="https://maps.google.com/" target="_blank" rel="noopener noreferrer">Buka Petunjuk Arah ↗</a>
+            <p style="font-size:.78rem;margin:18px 0 0">Sebaiknya konfirmasi titik lokasi dan jadwal kunjungan sebelum berangkat.</p>
           </div>
-          <div class="location-details">
-            <div class="location-address" id="location-address">
-              <h3>Alamat</h3>
-              <p id="full-address">Hubungi sales untuk alamat lengkap</p>
-            </div>
-            <a href="#" class="btn btn-outline" id="directions-btn" target="_blank" rel="noopener noreferrer" hidden>
-              <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
-              Buka Petunjuk Arah
-            </a>
+          <div>
+            <div class="map-placeholder image-placeholder" data-map-placeholder style="min-height:360px"><div><span class="house" aria-hidden="true">⌖</span><strong>Peta lokasi belum dikonfigurasi</strong><br><small>Masukkan URL Google Maps Embed pada bagian konfigurasi.</small></div></div>
+            <iframe class="map-frame hidden" data-map title="Peta lokasi properti" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 10. Fasilitas & Akses Sekitar -->
-    <section class="section section-alt" id="fasilitas" hidden>
+    <section class="section section-soft" id="faq">
       <div class="container">
-        <div class="section-header">
-          <span class="section-label">Fasilitas Sekitar</span>
-          <h2 class="section-title">Fasilitas & Akses Sekitar</h2>
-        </div>
-        <div class="facilities-grid" id="facilities-grid">
-          <!-- Kartu kategori fasilitas di-generate otomatis oleh script.js -->
+        <div class="section-head"><div class="kicker">Pertanyaan umum</div><h2>Yang sering ditanyakan calon pembeli</h2><p>Belum menemukan jawaban? Hubungi sales untuk mendapatkan informasi sesuai proyek ini.</p></div>
+        <div class="faq-list">
+          <details><summary>Berapa harga tanah kavling atau rumah?</summary><p>Harga dapat berbeda berdasarkan tipe, ukuran, dan ketersediaan. Hubungi sales untuk memperoleh daftar harga terbaru dan rincian biaya.</p></details>
+          <details><summary>Apakah bisa membeli tanah saja?</summary><p>Ketersediaan pilihan tanah saja bergantung pada proyek. Silakan tanyakan kepada sales apakah opsi tersebut tersedia di lokasi ini.</p></details>
+          <details><summary>Bagaimana cara melihat lokasi?</summary><p>Hubungi sales untuk meminta titik lokasi yang tepat dan membuat janji survei.</p></details>
+          <details><summary>Dokumen apa yang bisa diperiksa?</summary><p>Minta informasi dokumen dan status legalitas yang relevan dari developer. Periksa dokumen sebelum melakukan pembayaran atau menandatangani perjanjian.</p></details>
+          <details><summary>Apakah tersedia skema cicilan atau KPR?</summary><p>Skema pembayaran bergantung pada kebijakan developer dan, jika relevan, persetujuan lembaga pembiayaan. Minta simulasi tertulis yang sesuai dengan kondisi sebenarnya.</p></details>
         </div>
       </div>
     </section>
 
-    <!-- 11. Legalitas & Proses Pembelian -->
-    <section class="section" id="legalitas">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Legalitas & Proses</span>
-          <h2 class="section-title">Informasi Legalitas & Proses Pembelian</h2>
+    <section class="section lead-section" id="kontak">
+      <div class="container lead-grid">
+        <div>
+          <div class="kicker">Konsultasi properti</div>
+          <h2>Diskusikan kebutuhanmu dengan tim sales</h2>
+          <p class="muted">Isi informasi singkat agar tim sales dapat membantu memberikan detail yang relevan. Formulir ini akan membuka WhatsApp dan tidak menyimpan data ke database.</p>
+          <div class="trustline"><span><i class="check">✓</i> Tanya harga dan unit</span><span><i class="check">✓</i> Minta detail pembayaran</span><span><i class="check">✓</i> Jadwalkan survei</span></div>
         </div>
-        <div class="legal-content">
-          <div class="legal-info" id="legal-info">
-            <div class="legal-cards" id="legal-cards">
-              <!-- Kartu status dokumen legalitas -->
-            </div>
-            <div class="legal-disclaimer" id="legal-disclaimer"></div>
+        <form class="lead-card" id="lead-form">
+          <div class="form-grid">
+            <div class="field"><label for="name">Nama</label><input id="name" name="name" autocomplete="name" required maxlength="80" placeholder="Nama kamu"></div>
+            <div class="field"><label for="phone">Nomor WhatsApp</label><input id="phone" name="phone" autocomplete="tel" inputmode="tel" required maxlength="25" placeholder="08xxxxxxxxxx"></div>
+            <div class="field full"><label for="interest">Minat properti</label><select id="interest" name="interest" required><option value="">Pilih kebutuhan</option><option>Tanah kavling saja</option><option>Tanah beserta rumah</option><option>Masih ingin konsultasi</option></select></div>
+            <div class="field"><label for="budget">Kisaran anggaran</label><select id="budget" name="budget" required><option value="">Pilih anggaran</option><option>Di bawah Rp100 juta</option><option>Rp100–300 juta</option><option>Rp300–500 juta</option><option>Di atas Rp500 juta</option><option>Ingin konsultasi dahulu</option></select></div>
+            <div class="field"><label for="timeline">Rencana membeli</label><select id="timeline" name="timeline" required><option value="">Pilih waktu</option><option>Secepatnya</option><option>1–3 bulan</option><option>3–6 bulan</option><option>Masih survei pilihan</option></select></div>
+            <div class="field full"><label for="message">Pertanyaan tambahan (opsional)</label><textarea id="message" name="message" rows="3" maxlength="500" placeholder="Misalnya ingin tahu ukuran kavling atau jadwal survei"></textarea></div>
           </div>
-          <div class="purchase-steps" id="purchase-steps">
-            <h3>Proses Pembelian</h3>
-            <ol id="purchase-steps-list"></ol>
-          </div>
-        </div>
-        <div class="legal-cta">
-          <a href="#" class="btn btn-primary" id="legal-wa-btn" target="_blank" rel="noopener noreferrer">Tanya Detail Legalitas</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 12. Simulasi Pembayaran -->
-    <section class="section section-alt" id="pembayaran">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Pembayaran</span>
-          <h2 class="section-title">Simulasi Pembayaran</h2>
-        </div>
-        <div id="payment-calculator" hidden>
-          <div class="calculator-card">
-            <div class="form-group">
-              <label for="calc-price">Harga Properti (Rp)</label>
-              <input type="number" id="calc-price" class="form-input" min="0" step="1000000" placeholder="Masukkan harga properti">
-            </div>
-            <div class="form-group">
-              <label for="calc-dp">Uang Muka / DP (Rp)</label>
-              <input type="number" id="calc-dp" class="form-input" min="0" step="1000000" placeholder="Masukkan jumlah DP">
-            </div>
-            <div class="form-group">
-              <label for="calc-tenor">Tenor (bulan)</label>
-              <input type="number" id="calc-tenor" class="form-input" min="1" max="360" placeholder="Masukkan tenor dalam bulan">
-            </div>
-            <button type="button" class="btn btn-primary btn-block" id="calc-btn">Hitung Estimasi</button>
-            <div class="calc-result" id="calc-result" hidden>
-              <div class="calc-result-item">
-                <span>Sisa pembayaran</span>
-                <strong id="calc-remaining"></strong>
-              </div>
-              <div class="calc-result-item">
-                <span>Estimasi angsuran pokok/bulan</span>
-                <strong id="calc-monthly"></strong>
-              </div>
-            </div>
-            <p class="calc-disclaimer" id="calc-disclaimer"></p>
-          </div>
-        </div>
-        <div id="payment-no-calculator">
-          <div class="payment-info-card">
-            <p>Informasi skema pembayaran tersedia melalui sales kami.</p>
-            <a href="#" class="btn btn-primary" id="payment-wa-btn" target="_blank" rel="noopener noreferrer">Minta Simulasi Pembayaran</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 13. FAQ (Accordion Aksesibel) -->
-    <section class="section" id="faq">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">FAQ</span>
-          <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
-        </div>
-        <div class="faq-list" id="faq-list" role="list">
-          <!-- Accordion FAQ di-generate oleh script.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- 14. Lead Form -->
-    <section class="section section-alt" id="kontak">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-label">Hubungi Kami</span>
-          <h2 class="section-title">Formulir Minat</h2>
-          <p class="section-desc">Belum siap menghubungi WhatsApp? Isi formulir ini dan kami akan membantu Anda.</p>
-        </div>
-        <form class="lead-form" id="lead-form" novalidate>
-          <div class="form-group">
-            <label for="form-name">Nama Lengkap <span class="required">*</span></label>
-            <input type="text" id="form-name" class="form-input" required placeholder="Masukkan nama lengkap" autocomplete="name">
-            <span class="form-error" id="error-name"></span>
-          </div>
-          <div class="form-group">
-            <label for="form-phone">Nomor WhatsApp <span class="required">*</span></label>
-            <input type="tel" id="form-phone" class="form-input" required placeholder="Contoh: 081234567890" autocomplete="tel">
-            <span class="form-error" id="error-phone"></span>
-          </div>
-          <div class="form-group">
-            <label for="form-interest">Minat <span class="required">*</span></label>
-            <select id="form-interest" class="form-input" required>
-              <option value="">Pilih minat Anda</option>
-              <option value="kavling">Tanah Kavling</option>
-              <option value="rumah">Rumah</option>
-              <option value="keduanya">Keduanya</option>
-              <option value="investasi">Investasi</option>
-            </select>
-            <span class="form-error" id="error-interest"></span>
-          </div>
-          <div class="form-group" id="form-budget-group">
-            <label for="form-budget">Kisaran Anggaran</label>
-            <select id="form-budget" class="form-input">
-              <option value="">Pilih kisaran anggaran</option>
-              <!-- Options di-generate otomatis oleh script.js -->
-            </select>
-          </div>
-          <div class="form-group" id="form-timeline-group">
-            <label for="form-timeline">Rencana Waktu Pembelian</label>
-            <select id="form-timeline" class="form-input">
-              <option value="">Pilih rencana waktu</option>
-              <!-- Options di-generate otomatis oleh script.js -->
-            </select>
-          </div>
-          <div class="form-group form-checkbox-group">
-            <label class="checkbox-label">
-              <input type="checkbox" id="form-consent" required>
-              <span>Saya bersedia dihubungi terkait informasi properti ini. <a href="privacy.html" target="_blank" rel="noopener">Kebijakan Privasi</a></span>
-            </label>
-            <span class="form-error" id="error-consent"></span>
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg btn-block" id="form-submit">
-            Kirim via WhatsApp
-          </button>
-          <p class="form-note">Data Anda akan dikirim melalui WhatsApp ke tim sales kami.</p>
+          <p class="privacy-note">Dengan mengirim formulir ini, kamu meminta tim sales menghubungi terkait pertanyaan properti. Informasi akan diteruskan melalui WhatsApp yang kamu buka.</p>
+          <button class="btn btn-primary" type="submit" style="width:100%">Kirim Permintaan via WhatsApp ↗</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
 
-    <!-- 15. Final CTA Banner -->
-    <section class="section cta-section" id="cta-final">
-      <div class="container">
-        <h2 class="cta-title">Tertarik dengan Properti Ini?</h2>
-        <p class="cta-subtitle">Hubungi sales kami untuk informasi harga, ketersediaan unit, skema pembayaran, dan jadwal survei lokasi.</p>
-        <div class="cta-actions">
-          <a href="#" class="btn btn-primary btn-lg" id="final-cta-price" target="_blank" rel="noopener noreferrer">
-            Tanya Harga
-          </a>
-          <a href="#" class="btn btn-outline-light btn-lg" id="final-cta-survey" target="_blank" rel="noopener noreferrer">
-            Jadwalkan Survei
-          </a>
-        </div>
+    <section class="cta-band">
+      <div class="container cta-row">
+        <div><h2>Siap mengenal lokasi lebih dekat?</h2><p>Minta informasi terbaru atau atur jadwal survei bersama sales.</p></div>
+        <a class="btn btn-light js-wa" href="#kontak" data-wa-message="Halo, saya ingin menjadwalkan survei lokasi properti ini.">Jadwalkan Survei ↗</a>
       </div>
     </section>
   </main>
 
-  <!-- 16. Footer -->
-  <footer class="footer" id="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-info">
-          <h3 id="footer-developer">Developer</h3>
-          <p id="footer-project">Proyek</p>
-          <p id="footer-address">Alamat</p>
-        </div>
-        <div class="footer-links">
-          <h4>Navigasi</h4>
-          <ul>
-            <li><a href="#tentang">Tentang Proyek</a></li>
-            <li><a href="#keunggulan">Keunggulan</a></li>
-            <li><a href="#unit">Unit Tersedia</a></li>
-            <li><a href="#lokasi">Lokasi</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Hubungi Kami</h4>
-          <a href="#" class="footer-wa-link" id="footer-wa-btn" target="_blank" rel="noopener noreferrer">
-            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-            WhatsApp Sales
-          </a>
-          <div class="footer-social" id="footer-social" hidden>
-            <!-- Tautan sosial media jika dikonfigurasi -->
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; <span id="footer-year">2026</span> <span id="footer-company">Developer</span>. Hak cipta dilindungi.</p>
-        <div class="footer-bottom-links">
-          <a href="privacy.html">Kebijakan Privasi</a>
-        </div>
-      </div>
-      <div class="footer-disclaimer" id="footer-disclaimer"></div>
+  <footer>
+    <div class="container footer-row">
+      <div><strong data-project-name>Properti Magelang</strong><div data-developer-name>Informasi properti</div><p class="footer-small">Informasi pada halaman ini perlu dikonfirmasi kepada developer. Foto, harga, luas, ketersediaan, fasilitas, dan status dokumen harus diperbarui berdasarkan data yang benar. Halaman ini bukan penawaran jual beli yang mengikat.</p></div>
+      <div><a href="privacy.html">Kebijakan Privasi</a><p data-footer-location>Magelang, Jawa Tengah</p></div>
     </div>
   </footer>
+  <div class="mobile-cta"><a class="btn btn-primary js-wa" href="#kontak" data-wa-message="Halo, saya ingin bertanya tentang properti ini.">Tanya via WhatsApp ↗</a></div>
 
-  <!-- 17. Sticky WhatsApp Actions -->
-  <div class="sticky-wa" id="sticky-wa">
-    <!-- Desktop Floating Circle Button -->
-    <a href="#" class="sticky-wa-float" id="sticky-wa-float" target="_blank" rel="noopener noreferrer" aria-label="Hubungi via WhatsApp">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-    <!-- Mobile Sticky Full-Width Bar -->
-    <div class="sticky-wa-bar" id="sticky-wa-bar">
-      <a href="#" class="sticky-wa-bar-btn" id="sticky-wa-bar-btn" target="_blank" rel="noopener noreferrer">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        <span>Hubungi via WhatsApp</span>
-      </a>
-    </div>
-  </div>
+  <script>
+    /*
+      KONFIGURASI LOKASI:
+      1. Ganti data di bawah dengan informasi resmi dari developer.
+      2. Gunakan nomor WhatsApp format internasional tanpa tanda +, contoh 62812xxxxxxx.
+      3. Tempel URL embed dari Google Maps > Bagikan > Sematkan peta.
+      4. Ganti heroImage dengan path gambar lokal, contoh assets/images/foto-lokasi.webp.
+      5. Jangan publikasikan harga, status dokumen, atau klaim yang belum diverifikasi.
+    */
+    const CONFIG = {
+      projectName: "Properti Magelang — Ganti Nama Proyek",
+      developerName: "Nama Developer",
+      projectType: "kavling-rumah", // kavling | rumah | kavling-rumah
+      city: "Magelang",
+      district: "Ganti Kecamatan",
+      fullAddress: "",
+      whatsappNumber: "", // contoh format: 6281234567890
+      heroTitle: "Temukan Kavling atau Rumah",
+      heroSubtitle: "Dapatkan informasi lokasi, spesifikasi, harga, dan pilihan pembayaran langsung dari tim sales. Kenali propertinya, lalu jadwalkan survei sebelum mengambil keputusan.",
+      heroImage: "", // contoh: assets/images/hero.webp
+      googleMapsEmbedUrl: "",
+      googleMapsDirectionsUrl: "",
+      landArea: "",
+      buildingArea: "",
+      priceStartingFrom: "",
+      seoTitle: "Tanah Kavling & Rumah di Magelang | Konsultasi Gratis",
+      metaDescription: "Cari tanah kavling atau rumah di Magelang? Minta informasi lokasi, spesifikasi, harga, dan jadwalkan survei melalui WhatsApp.",
+      canonicalUrl: "",
+      ogImage: "",
+      primaryKeyword: "tanah kavling di Magelang",
+      analytics: { ga4: "", metaPixel: "", tiktokPixel: "" }
+    };
 
-  <!-- Cookie Consent Modal -->
-  <div class="cookie-consent" id="cookie-consent" hidden role="dialog" aria-label="Persetujuan cookie">
-    <div class="cookie-content">
-      <p>Kami menggunakan cookie dan teknologi serupa untuk analitik dan peningkatan layanan. <a href="privacy.html">Pelajari lebih lanjut</a>.</p>
-      <div class="cookie-actions">
-        <button class="btn btn-sm btn-outline" id="cookie-decline">Tolak</button>
-        <button class="btn btn-sm btn-primary" id="cookie-accept">Terima</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Schema.org JSON-LD Structured Data Scripts (Diisi via JavaScript) -->
-  <script type="application/ld+json" id="schema-website"></script>
-  <script type="application/ld+json" id="schema-organization"></script>
-  <script type="application/ld+json" id="schema-breadcrumb"></script>
-
-  <!-- Skrip Konfigurasi & Interaktivitas -->
-  <script src="config.js"></script>
-  <script src="script.js"></script>
+    const $ = (selector) => document.querySelector(selector);
+    const setText = (selector, value) => { if (value) document.querySelectorAll(selector).forEach(el => el.textContent = value); };
+    const safeText = (value, fallback) => (typeof value === "string" && value.trim()) ? value.trim() : fallback;
+    const cleanPhone = (value) => String(value || "").replace(/\D/g, "");
+    const pageUrl = () => window.location.href;
+    const campaignSummary = () => {
+      const params = new URLSearchParams(window.location.search);
+      const keys = ["utm_source","utm_medium","utm_campaign","utm_content"];
+      return keys.filter(k => params.get(k)).map(k => `${k}: ${params.get(k)}`).join("\n");
+    };
+    function buildWhatsAppUrl(message) {
+      const phone = cleanPhone(CONFIG.whatsappNumber);
+      if (!phone || phone.length < 10) return "";
+      const campaign = campaignSummary();
+      const parts = [
+        message,
+        `Proyek: ${CONFIG.projectName}`,
+        `Halaman: ${pageUrl()}`,
+        campaign ? `Sumber kampanye:\n${campaign}` : ""
+      ].filter(Boolean);
+      return `https://wa.me/${phone}?text=${encodeURIComponent(parts.join("\n\n"))}`;
+    }
+    function initPage() {
+      document.title = safeText(CONFIG.seoTitle, document.title);
+      const desc = document.querySelector('meta[name="description"]');
+      if (desc) desc.content = safeText(CONFIG.metaDescription, desc.content);
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      const ogDesc = document.querySelector('meta[property="og:description"]');
+      const ogImage = document.querySelector('meta[property="og:image"]');
+      if (ogTitle) ogTitle.content = document.title;
+      if (ogDesc) ogDesc.content = safeText(CONFIG.metaDescription, "");
+      if (ogImage && CONFIG.ogImage) ogImage.content = CONFIG.ogImage;
+      if (CONFIG.canonicalUrl) {
+        let canonical = document.querySelector('link[rel="canonical"]');
+        if (!canonical) { canonical = document.createElement("link"); canonical.rel = "canonical"; document.head.appendChild(canonical); }
+        canonical.href = CONFIG.canonicalUrl;
+      }
+      setText("[data-project-name]", CONFIG.projectName);
+      setText("[data-developer-name]", CONFIG.developerName);
+      setText("[data-city]", CONFIG.city);
+      setText("[data-hero-title]", CONFIG.heroTitle);
+      setText("[data-hero-subtitle]", CONFIG.heroSubtitle);
+      setText("[data-location-short]", [CONFIG.district, CONFIG.city].filter(Boolean).join(", ") || "Lokasi dikonfirmasi sales");
+      setText("[data-footer-location]", [CONFIG.district, CONFIG.city, "Jawa Tengah"].filter(Boolean).join(", "));
+      setText("[data-address-text]", CONFIG.fullAddress || "Alamat lengkap akan dikonfirmasi oleh tim sales.");
+      setText("[data-address-detail]", CONFIG.fullAddress || "Alamat lengkap belum dimasukkan. Hubungi sales untuk mendapatkan titik lokasi yang tepat.");
+      setText("[data-land-area]", CONFIG.landArea || "Konfirmasi ke sales");
+      setText("[data-building-area]", CONFIG.buildingArea || "Konfirmasi ke sales");
+      setText("[data-price]", CONFIG.priceStartingFrom || "Hubungi sales");
+      setText("[data-price-label]", CONFIG.priceStartingFrom ? `Mulai ${CONFIG.priceStartingFrom}` : "Harga & unit tersedia");
+      const typeLabels = {kavling:"Tanah Kavling", rumah:"Rumah", "kavling-rumah":"Tanah Kavling & Rumah"};
+      setText("[data-project-type-label]", typeLabels[CONFIG.projectType] || "Properti");
+      if (CONFIG.heroImage) {
+        const img = $("[data-hero-image]");
+        img.src = CONFIG.heroImage;
+        img.alt = `Foto ${CONFIG.projectName} di ${CONFIG.city}`;
+        img.classList.remove("hidden");
+        $("[data-hero-placeholder]").classList.add("hidden");
+        img.onerror = () => { img.classList.add("hidden"); $("[data-hero-placeholder]").classList.remove("hidden"); };
+      }
+      if (CONFIG.googleMapsEmbedUrl) {
+        const map = $("[data-map]");
+        map.src = CONFIG.googleMapsEmbedUrl;
+        map.classList.remove("hidden");
+        $("[data-map-placeholder]").classList.add("hidden");
+      }
+      if (CONFIG.googleMapsDirectionsUrl) $("[data-directions]").href = CONFIG.googleMapsDirectionsUrl;
+      else if (CONFIG.fullAddress) $("[data-directions]").href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(CONFIG.fullAddress)}`;
+      document.querySelectorAll(".js-wa").forEach(link => {
+        const message = link.dataset.waMessage || "Halo, saya ingin bertanya tentang properti ini.";
+        const url = buildWhatsAppUrl(message);
+        if (url) { link.href = url; link.target = "_blank"; link.rel = "noopener noreferrer"; }
+        else {
+          link.href = "#kontak";
+          link.addEventListener("click", (event) => {
+            if (event.currentTarget.getAttribute("href") === "#kontak") {
+              const status = $("#form-status");
+              if (status) status.textContent = "Nomor WhatsApp developer belum dikonfigurasi. Silakan isi nomor pada CONFIG di bagian akhir file HTML.";
+            }
+          });
+        }
+      });
+    }
+    $("#lead-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const status = $("#form-status");
+      const phone = cleanPhone(CONFIG.whatsappNumber);
+      if (!phone || phone.length < 10) {
+        status.textContent = "Nomor WhatsApp developer belum diatur. Lengkapi whatsappNumber pada CONFIG sebelum halaman dipublikasikan.";
+        return;
+      }
+      const form = new FormData(event.currentTarget);
+      const visitorPhone = String(form.get("phone") || "").trim();
+      if (visitorPhone.replace(/\D/g, "").length < 9) {
+        status.textContent = "Periksa kembali nomor WhatsApp yang kamu masukkan.";
+        $("#phone").focus();
+        return;
+      }
+      const message = [
+        "Halo, saya ingin konsultasi tentang properti ini.",
+        `Nama: ${String(form.get("name") || "").trim()}`,
+        `Nomor WhatsApp saya: ${visitorPhone}`,
+        `Minat: ${form.get("interest")}`,
+        `Anggaran: ${form.get("budget")}`,
+        `Rencana membeli: ${form.get("timeline")}`,
+        `Pertanyaan: ${String(form.get("message") || "-").trim() || "-"}`,
+      ].join("\n");
+      const url = buildWhatsAppUrl(message);
+      if (!url) { status.textContent = "Tautan WhatsApp belum dapat dibuat. Periksa konfigurasi nomor developer."; return; }
+      status.textContent = "WhatsApp akan dibuka untuk mengirim permintaanmu. Pastikan pesan terkirim di aplikasi WhatsApp.";
+      window.open(url, "_blank", "noopener,noreferrer");
+    });
+    initPage();
+  </script>
 </body>
 </html>
